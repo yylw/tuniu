@@ -1,0 +1,97 @@
+#find{
+	.header{
+		color:#000;
+		background:#f8f8f8;
+		.head-left{
+			span{
+				width:30px;
+				height:30px;
+				position:absolute;
+				left:10px;
+				top:10px;
+				background:url(../img/wei_03.png) no-repeat;
+				background-size:100% 100%;
+			}
+		}
+		.head-right{
+			span{
+				background:url(../img/s_03.png) no-repeat;
+				background-size:100% 100%;
+			}
+		}
+	}
+	.content{
+		overflow:auto;
+		.img{
+			p{
+				&:last-child{
+					margin-top:10px;
+				}
+			}
+		}
+		.con{
+			.dl{
+				width:40%;
+				margin:0 auto;
+				line-height:50px;
+				text-align:center;
+				dd{
+					&:first-child{
+						border-bottom:2px solid;
+					}
+					&:last-child{
+						font-size:1.8rem;
+						font-weight:bolder;
+					}
+				}
+			}
+			.con1{
+				border-bottom:1px solid #d5d5d5;
+				padding-bottom:5px;
+				overflow:hidden;
+				dl{
+					float:left;
+					width:50%;
+					padding:0 20px;
+					dd{
+						line-height:30px;
+						&:first-child{
+							width: 100%;
+						    overflow: hidden;
+						    text-overflow: ellipsis;
+						    white-space: nowrap;
+						}
+						&:last-child{
+							color:#ccc;
+							font-size:0.9rem;
+						}
+					}
+				&:first-child{
+					border-right:1px solid #ccc;
+				}
+				}
+			}
+			.p1{
+				line-height:50px;
+				text-align:center;
+			}
+			.kong{
+				height:10px;
+				width:100%;
+				background:#e5e5e5;
+			}
+			.con2{
+				width:100%;
+				img{
+					width: 45%;
+				    float: left;
+				    margin-right: 10px;
+				    margin-bottom: 10px;
+				    &:nth-child(1),&:nth-child(3){
+				    	margin-left:10px;
+				    }
+				}
+			}
+		}
+	}
+}

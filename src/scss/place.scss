@@ -1,0 +1,90 @@
+#place{
+	.header{
+		border-bottom:1px solid #ccc;
+		.head-left{
+			color:$backcolor;
+			i{
+				border-top: 8px solid $backcolor;
+			}	
+		}
+		.head-center{
+			input{
+				background:#e5e5e5;
+			}
+			i{				
+			 	background:url(../img/head2_03.png) no-repeat left center;	
+			 	background-size:100% 100%;
+			}
+			em{
+				background:url(../img/head2_05.png) no-repeat left center;	
+			 	background-size:100% 100%;
+			}
+		}
+		.head-right{
+			span{
+				&:nth-child(1){
+					background:url(../img/head2_07.png) no-repeat left center;	
+			 		background-size:100% 100%;
+				}
+			}
+		}
+	}
+	.content{
+		width:100%;
+		overflow:hiden;
+	}
+	aside{
+		width:30%;
+		height:100%;
+		float:left;
+		font-size:0.9rem;
+		overflow:auto;
+		ul{
+			width:100%;
+			li{
+				line-height:50px;
+				text-align:center;
+				border-bottom:1px solid #d4d4d4;
+				background:#f0f0f0;
+			}
+			.active{
+				background:#fff;
+				border-left:2px solid $backcolor;
+			}
+		}
+	}
+	section{
+		width:70%;
+		float:left;
+		position:realtive;
+		&>div{
+			width:100%;
+			height:80%;
+			position:absolute;
+			overflow:auto;
+			-webkit-transform:translateX(100%);
+			&:first-child{
+				-webkit-transform:translateX(0);
+			}
+		}
+		.one{
+			padding:0 10px;
+			overflow:hidden;
+			h3{
+				margin:10px 0;
+				padding-left:4px;
+				border-left:2px solid $backcolor;
+			}
+			div{
+				width:100%;
+				img{
+					width:36%;
+					float:left;
+					padding-right:10px;
+					padding-top:10px;
+				}
+			}
+
+		}
+	}
+}

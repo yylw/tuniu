@@ -1,0 +1,317 @@
+#index{
+	.content{
+		overflow:auto;
+	}
+	.header{
+		background:$backcolor;
+	}
+	.nav1{
+		width:100%;
+		overflow:hidden;
+		.n1_1{
+			dl{
+				padding:6px;
+				padding-bottom:0;
+			}
+		}
+		dl{
+			width:20%;
+			float:left;
+			text-align:center;
+			font-size:0.8rem;
+			dt{
+				width:50px;
+				margin:0 auto;
+				img{
+					width:100%;
+					height:100%;
+				}
+			}
+			dd{
+				padding:10px 0;
+			}
+		}
+	}
+	.nav2{
+		width:100%;
+		overflow:hidden;
+		dl{
+			width:33.33%;
+			float:left;
+			padding:10px;
+			border:1px solid $bordercolor;
+			dt{
+				width:26px;
+				margin-right:6px;
+				float:left;
+			}
+			dd{
+				padding-top:3px;
+				font-size:0.8rem;
+			}
+		}
+		.n2_2{
+			dl{
+				&:nth-child(1){
+					dt{
+						margin-right:1px;
+					}
+				}
+			}
+		}
+	}
+	.banner{
+		height:80px;
+		padding:0 6px;
+	    .swiper-container {
+	        width: 100%;
+	        height: 100%;
+
+	    }
+    	.swiper-pagination-bullet{
+    		width:20px;
+    		height:3px;
+    	}
+	}
+	.xin{
+		width:100%;
+		padding:0 6px;
+		height:50px;
+		line-height:50px;
+		position:relative;
+			span{
+				width:20px;
+				height:20px;
+				display:inline-block;
+				background:url(../img/zan.png) no-repeat;
+				background-size:100% 100%;
+				position:absolute;
+				top:13px;
+			}
+			em{
+				width:60px;
+				height:20px;
+				display:inline-block;
+				background:url(../img/di.png) no-repeat;
+				background-size:100% 100%;
+				position:absolute;
+				top:13px;
+				right:10px;	
+			}
+			label{
+				display: inline-block;
+    			width: 80%;
+    			padding-left:20px;
+    			overflow:hidden;
+    			text-overflow:ellipsis;
+    			white-space:nowrap;
+			}
+	}
+	.area{
+		width:100%;
+		a{
+			width:30%;
+			float:left;
+			display:inline-block;
+			margin-left:6px;
+			margin-top:6px;
+			
+		}
+	}
+	.tel{
+		display:none;
+		width:100%;
+		height:300px;
+		background:#fff;
+		position:absolute;
+		bottom:0;
+		z-index:100;
+		dl{
+			width:100%;
+			text-align:center;
+			padding-top:10px;
+			line-height:30px;
+			dt{
+				width:30%;
+				height:100%;
+				margin:0 auto;
+			}
+			dd{
+				p{
+					&:nth-child(1){
+						color:$backcolor;
+						font-size:1.5rem;
+					}
+				}
+			}
+		}
+		.btn{
+			width:94%;
+			margin:10px;
+			height:40px;
+			line-height:40px;
+			text-align:center;
+			border-radius:10px;
+			background:#999;
+			color:#fff;
+		}
+		.telphone{
+			background:#fca542;
+		}
+	}
+}
+#serch{
+	display:none;
+	.header{
+		.head-left{
+			width:10%;
+			.left-arrow{
+				@include left-arrow($left:0px,$top:3px);
+			}
+		}
+		.head-center{
+			width:80%;
+			input{
+				background:#f8f8f8;
+			}
+			i{				
+				 background:url(../img/s_03.png) no-repeat left center;	
+				 background-size:100% 100%;
+			}
+		}
+		.head-right{
+			width:10%;
+				span{
+					&:nth-child(1){
+						background:url(../img/serch.png) no-repeat left center;	
+				 		background-size:100% 100%;
+					}
+				}
+			}
+		}
+		.cont{		
+			margin:0 10px;
+			margin-top:50px;
+			.p1{
+				line-height:40px;
+				height:40px;
+				border-bottom:1px solid #eee;
+				font-size:0.8rem;
+			}
+			ul{
+				width:100%;
+				overflow:hidden;
+				li{
+					width:21%;
+					height:40px;
+					line-height:40px;
+					text-align:center;
+					border:1px solid #eee;
+					float:left;
+					margin:2%;
+					font-size:0.8rem;
+				}
+			}
+			.p2{
+				line-height:40px;
+				height:40px;
+				text-align:center;
+				color:$backcolor;
+				border-bottom:1px solid #eee;
+
+			}
+		}
+}
+#city{
+	.header{
+		color:#000;
+		span{
+			position:absolute;
+			left:10px;
+			font-size:1rem;
+		}
+	}
+	section{
+	    overflow: auto;
+	    width:100%;
+	    height: 100%;
+	    padding-top: 50px;
+	    position: absolute;
+	}
+	.cp{
+		
+		height:46px;
+		background:#eee;
+		input{
+			width: 94%;
+		    height: 34px;
+		    border-radius: 5px;
+		    margin: 6px 10px;
+		    position:relative;
+		    padding-left:40px;
+		}
+		span{
+			position: absolute;
+		    top: 60px;
+		    left: 17px;
+		    width: 26px;
+		    height: 26px;
+		    z-index: 1;
+			background: url(../img/serch.png) no-repeat left center;
+    		background-size: 100% 100%;
+		}
+	}
+	.con{
+		padding:0 10px;
+		width:100%;
+		overflow:hidden;
+		h3{
+			line-height:40px;
+		}
+		p{
+			width:21%;
+			height:40px;
+			line-height:40px;
+			text-align:center;
+			border:1px solid #eee;
+			float:left;
+			margin:2%;
+			font-size:0.8rem;
+		}	
+	}
+	.alphabet{
+		position:fixed;
+		right:0;
+		top:25%;
+	}
+	.city-detail{
+		text-indent:1rem;
+		width:100%;
+		.cont-title{
+			height:30px;
+			line-height:30px;
+			font-size:0.75rem;
+			background:#eee;
+
+		}
+		p{
+			line-height:40px;
+			border-bottom:1px solid #eee;
+		}
+	}
+	.search-result{
+		display:none;
+		position: absolute;
+		top: 105px;
+		bottom: 0;
+		background: #ffffff;
+		width: 100%;
+		overflow: auto;
+		p{
+			width: 100%;
+			line-height: 40px;
+			border-bottom:1px solid #eee;
+			text-indent: 1rem;
+		}
+	}
+}

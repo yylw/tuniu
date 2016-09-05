@@ -1,0 +1,94 @@
+#my{
+	.content{
+		overflow:auto;
+	}
+	.header{
+		h2{
+			color:#000;
+		}
+	}
+	.banner{
+		height:110px;
+		width:100%;
+		background:url(../img/bb.png) no-repeat;
+		background-size:100% 100%;
+		position:relative;
+		p{
+			width:20%;
+			height:40px;
+			line-height:40px;
+			color:#fff;
+			text-align:center;
+			position:absolute;
+			border-radius:5px;
+		}
+		.login{
+			left:22%;
+			top:29%;
+			background:#33BD61;
+		}
+		.register{
+			right:25%;
+			top:29%;
+			background:#FF8A00;
+		}
+	}
+	.nav{
+		width:100%;
+		overflow:hidden;
+		padding:10px 0;
+		dl{
+			width:25%;
+			float:left;
+			dt{
+				width:39px;
+				height:35px;
+				margin:0 auto;
+			}
+			dd{
+				line-height:30px;
+				text-align:center;
+			}
+		}
+	}
+	.kong{
+		height:20px;
+		width:100%;
+		border-top:2px solid #d4d4d4;
+		border-bottom:1px solid #d4d4d4;
+		background:#f0f0f0;
+	}
+	.con{
+		dl{
+			width:100%;
+			line-height:60px;
+			height:60px;
+			dt{
+				width:30px;
+				height:30px;
+				float:left;
+				margin:0 10px;
+				margin-top:15px;
+			}
+			dd{
+				overflow:hidden;
+				border-bottom:1px solid #cdcdcd;
+				.right-arrow{
+					@include right-arrow($right:10px,$top:25px)
+				}
+				span{
+					&:last-child{
+						padding-right:25px;
+						font-size:0.9rem;
+						color:$basecolor;
+					}
+				}
+			}
+			&:last-child{
+				dd{
+					border:0;
+				}
+			}
+		}
+	}
+}
